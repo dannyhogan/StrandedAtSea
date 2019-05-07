@@ -7,5 +7,6 @@ vesselForm.addEventListener('submit', event => {
 
     const formData = new FormData(vesselForm);
     const vessel = makeVessel(formData);
+    window.location = 'map.html';
     console.log('vessel', vessel);
 });
