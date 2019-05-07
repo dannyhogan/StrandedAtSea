@@ -1,4 +1,5 @@
 import makeVessel from '../src/home/make-vessel.js';
+
 const test = QUnit.test;
 
 test('creates a new vessel object based off formdata', assert => {
@@ -15,7 +16,7 @@ test('creates a new vessel object based off formdata', assert => {
         confidence: '100'
     };
     //act
-    const result = makeVessel(formData)
+    const result = makeVessel(formData);
     
     //assert
     assert.deepEqual(expected, result);
