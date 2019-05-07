@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/home/styles.css">
+    <title>Stranded At Sea!</title>
+</head>
+<body>
+    <header>
+        <h1>Lance is Stranded at Sea!</h1>
+        <h2>He needs your help!</h3>
+    </header>
+    <main>
+        <form>
+            <fieldset class="form-box">
+                <legend>Pick Your Hero</legend>
+                <p>
+                    <label>
+                        <input type="radio" name="hero" value="coast-guard">
+                        Coast Guard
+                        <img src="./assets/coast-guard.svg">
+                    </label>
+                    <label>
+                        <input type="radio" name="hero" value="pirate">
+                        Pirate
+                        <img src="./assets/pirate.svg">
+                    </label>
+                    <label>
+                        <input type="radio" name="hero" value="fisherman">
+                        Fisherman
+                        <img src="./assets/fisherman.svg">
+                    </label>
+                </p>
+            </fieldset>
+            <div class="form-box">
+                <h3>What's your sailor name?</h3>
+                <input id="name" name="name">
+            </div>
+            <button>Save Lance!</button>
+        </form>
+    </main>
+</body>
+</html>
