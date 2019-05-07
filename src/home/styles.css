@@ -56,17 +56,40 @@ legend {
     text-shadow: 0px 0px 5px black;
 }
 
+#name {
+    margin-bottom: 10px;
+}
+
 .form-box {
-    border: 1px solid white;
+    border: 3px solid white;
     border-radius: 20px;
     box-shadow: 0px 0px 5px black;
     margin-bottom: 25px;
-    padding: 20px;
-    transition: 1s;
+    padding: 10px;
+    transition: .5s;
 }
 
 .form-box:hover {
-    border: 2px solid gold;
-    box-shadow: 0px 0px 10px white;
-    transition: 1s;
+    border: 3px solid gold;
+    box-shadow: 0px 0px 15px white;
+    transition: .5s;
+}
+
+button {
+    font-family: 'Pirata One';
+    font-size: 20px;
+    padding: 10px;
+    transition: .5s;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 3px solid white;
+    color: white;
+}
+
+button:hover {
+    font-family: 'Pirata One';
+    font-size: 20px;
+    background-color: gold;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 15px white;
 }
