@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    background-image: URL('/assets/background.png');
+    background-size: cover;
+}
+
+img {
+    width: 50%;
+}
