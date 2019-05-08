@@ -1,4 +1,5 @@
 import makeVessel from './make-vessel.js';
+import api from '../services/api.js';
 
 const vesselForm = document.getElementById('vessel-form');
 
@@ -7,6 +8,7 @@ vesselForm.addEventListener('submit', event => {
 
     const formData = new FormData(vesselForm);
     const vessel = makeVessel(formData);
+    console.log(vessel);
+    api.saveVessel(vessel);
     window.location = 'map.html';
-    console.log('vessel', vessel);
 });
