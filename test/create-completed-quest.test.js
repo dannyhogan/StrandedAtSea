@@ -6,6 +6,7 @@ test('creates html for completed quest', assert => {
     const quest = {
         id: 'island',
         title: 'Search a remote island!'
+        
     };
 
     const expected = '<p class="completed quest">Search a remote island!</p>';
