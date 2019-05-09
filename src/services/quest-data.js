@@ -97,4 +97,6 @@ const island3 = {
     }]
 };
 
-const quests = [island, island2, island3]
+const questData = [island, island2, island3]
+
+export default questData;
