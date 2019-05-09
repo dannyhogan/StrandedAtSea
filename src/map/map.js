@@ -3,5 +3,9 @@ import makeProfile from '../make-profile.js';
 import createQuestLink from './create-quest-links.js';
 import createCompletedQuest from './create-completed-quest.js';
 
-console.log(makeProfile());
+const quests = api.getQuests();
+
+//Parent element for quest links
+const questLinks = document.getElementById('quests');
+
 makeProfile();
