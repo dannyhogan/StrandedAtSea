@@ -7,6 +7,8 @@ function createQuestLink(quest) {
     link.href = 'quest.html?' + searchParams.toString();
 
     link.textContent = quest.title;
+    link.style.top = quest.map.top;
+    link.style.right = quest.map.right;
     return link;
 }
 
