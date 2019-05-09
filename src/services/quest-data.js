@@ -10,7 +10,7 @@ const island = {
         id: 'search',
         description: `Explore the island! A floating cucumber must mean Lance is nearby!`,
         result: 'Oh no! On your way to the island, you come across a tropical storm! Your boat is intact, but suffered a minor crack in the bow. You lose 20 confidence, 10 gas, and 5 HP.',
-        hp: 0,
+        hp: -5,
         gas: -10,
         confidence: -20
     }, {
