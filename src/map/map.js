@@ -11,7 +11,6 @@ const questLinks = document.getElementById('quests');
 for(let i = 0; i < quests.length; i++) {
     const quest = quests[i];
     const questLink = createQuestLink(quest);
-    console.log(questLink)
     questLinks.append(questLink);
 }
 makeProfile();
