@@ -67,7 +67,7 @@ const island3 = {
     id: 'island3',
     title: 'Search a remote island!',
     map: {
-        top: '45%',
+        top: '35%',
         right: '5%'
     },
     description: `You see a remote island off in the distance. It doesn't look like much is there - however, you look through your binoculars and notice a cucumber floating near the shore. What do you want to do?`,
