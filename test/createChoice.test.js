@@ -1,7 +1,8 @@
 import questData from '../src/services/quest-data.js';
+import createChoice from '../src/quest/createChoice.js';
 const test = QUnit.test;
 
-QUnit.module('creates each choice in quest form')
+QUnit.module('creates each choice in quest form');
 
 test('creates choice input html a single choice', assert => {
     //arrange
@@ -12,18 +13,3 @@ test('creates choice input html a single choice', assert => {
     // assert
     assert.equal(result.outerHTML, expected);
 });
-
-function createChoice(choice) {
-    const label = document.createElement('label');
-    const input = document.createElement('input');
-
-    input.type = 'radio';
-    input.classList.add('choice');
-    input.id = choice.id;
-    input.value = choice.id;
-
-    label.textContent = choice.description;
-    label.appendChild(input);
-
-    return label;
-}
