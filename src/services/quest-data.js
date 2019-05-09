@@ -2,8 +2,7 @@ const island = {
     id: 'island',
     title: 'Search a remote island!',
     map: {
-        top: '50%',
-        left: '50%'
+        top: '25%',
     },
     description: `You see a remote island off in the distance. It doesn't look like much is there - however, you look through your binoculars and notice a cucumber floating near the shore. What do you want to do?`,
     choices: [{
@@ -35,8 +34,8 @@ const island2 = {
     id: 'island2',
     title: 'Search a remote island!',
     map: {
-        top: '50%',
-        left: '50%'
+        top: '35%',
+        right: '5%'
     },
     description: `You see a remote island off in the distance. It doesn't look like much is there - however, you look through your binoculars and notice a cucumber floating near the shore. What do you want to do?`,
     choices: [{
@@ -68,8 +67,8 @@ const island3 = {
     id: 'island3',
     title: 'Search a remote island!',
     map: {
-        top: '50%',
-        left: '50%'
+        top: '45%',
+        right: '5%'
     },
     description: `You see a remote island off in the distance. It doesn't look like much is there - however, you look through your binoculars and notice a cucumber floating near the shore. What do you want to do?`,
     choices: [{
