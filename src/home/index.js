@@ -8,7 +8,6 @@ vesselForm.addEventListener('submit', event => {
 
     const formData = new FormData(vesselForm);
     const vessel = makeVessel(formData);
-    console.log(vessel);
     api.saveVessel(vessel);
     window.location = 'map.html';
 });
