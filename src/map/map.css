@@ -1,12 +1,12 @@
 html {
-    background-image: URL('/assets/background.png');
-    background-size: cover;
+    background-image: URL('/assets/background.png') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #3e64fc;
 }
 
 body {
     text-align: center;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -21,24 +21,11 @@ main {
 }
 
 #profile {
-    height: 250px;
-    width: 150px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 50px;
-    box-shadow: 0px 0px 10px black;
-}
-
-#vessel-logo {
-    width: 35px;
+    margin-right: 75px;
 }
 
 #quests {
-    height: 500px;
+    height: 600px;
     width: 600px;
     background-image: URL('/assets/map.png');
     background-size: contain;
