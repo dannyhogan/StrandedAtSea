@@ -38,3 +38,7 @@ main {
     margin-top: 100px;
     position: relative;
 }
+
+nav a img {
+    width: 90px;
+}
