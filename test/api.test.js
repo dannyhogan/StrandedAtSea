@@ -27,12 +27,8 @@ test('method getQuests returns quests', assert => {
     //arrange
     const expected = questData;
     //act
-    const quests = getQuests();
+    const quests = api.getQuests();
     //assert
     assert.deepEqual(quests, expected);
 });
-
-function getQuests() {
-    return questData;
-}
 
