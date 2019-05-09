@@ -2,6 +2,8 @@ import makeVessel from '../src/home/make-vessel.js';
 
 const test = QUnit.test;
 
+QUnit.module('creates vessel object');
+
 test('creates a new vessel object based off formdata', assert => {
     //arrange
     const formData = new FormData();

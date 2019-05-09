@@ -2,9 +2,11 @@ import api from '../src/services/api.js';
 import questData from '../src/services/quest-data.js';
 const test = QUnit.test;
 
+QUnit.module('API Test');
+
 api.storage = sessionStorage;
 
-test('creates a new vessel object based off formdata', assert => {
+test('getVessel() gets vessel object from API', assert => {
     //arrange
     const vessel = {
         type: 'coast-guard',
