@@ -4,7 +4,7 @@ const test = QUnit.test;
 
 QUnit.module('creates each choice in quest form');
 
-test('creates choice input html a single choice', assert => {
+test('creates choice input html for a single choice in quest', assert => {
     //arrange
     const expected = `<label>Explore the island! A floating cucumber must mean Lance is nearby!<input type="radio" class="choice" id="search" value="search"></label>`;
     const choice = questData[0].choices[0];
