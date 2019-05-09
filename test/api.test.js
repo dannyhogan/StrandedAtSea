@@ -32,3 +32,22 @@ test('method getQuests returns quests', assert => {
     assert.deepEqual(quests, expected);
 });
 
+test('method getQuestById returns a single quest when given an id', assert => {
+    //arrange
+    const expectedQuest = questData[0];
+    //act
+    const result = getQuestById(expectedQuest.id);
+
+    //assert
+    assert.deepEqual(result, expectedQuest);
+});
+
+function getQuestById(id) {
+    const quests = questData;
+    for(let i = 0; i < quests.length; i++) {
+        const quest = quests[i];
+        if(id === quest.id) {
+            return quest;
+        }
+    }
+}
