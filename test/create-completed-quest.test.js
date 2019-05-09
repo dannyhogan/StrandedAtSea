@@ -1,3 +1,4 @@
+import createCompletedQuest from '../src/map/create-completed-quest.js';
 const test = QUnit.test;
 
 test('creates html for completed quest', assert => {
@@ -13,12 +14,3 @@ test('creates html for completed quest', assert => {
     //assert
     assert.equal(result.outerHTML, expected);
 });
-
-function createCompletedQuest(quest) {
-    const p = document.createElement('p');
-    p.classList.add('completed');
-    p.classList.add('quest');
-    p.textContent = quest.title;
-
-    return p;
-}
