@@ -13,6 +13,8 @@ body {
 form {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 fieldset {
@@ -21,6 +23,7 @@ fieldset {
     color: white;
     display: flex;
     border: none;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -49,5 +52,9 @@ fieldset {
 main {
     width: 50%;
     margin-top: 150px;
-    margin-left: 20%;
+    margin-left: 25%;
+}
+
+#quest-description {
+    background-color: rgba(255, 255, 255, 0.288);
 }
