@@ -79,25 +79,6 @@ p label {
     margin: 0px 10px;
 }
 
-button {
-    font-family: 'Pirata One';
-    font-size: 20px;
-    padding: 10px;
-    transition: .5s;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 3px solid white;
-    color: white;
-}
-
-button:hover {
-    font-family: 'Pirata One';
-    font-size: 20px;
-    background-color: gold;
-    text-shadow: 0px 0px 5px black;
-    box-shadow: 0px 0px 15px white;
-}
-
 .radio{
     display: none !important;
 }
