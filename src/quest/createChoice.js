@@ -4,6 +4,7 @@ function createChoice(choice) {
 
     input.type = 'radio';
     input.classList.add('choice');
+    input.name = 'choice';
     input.id = choice.id;
     input.value = choice.id;
 
