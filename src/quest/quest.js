@@ -5,7 +5,9 @@ import makeProfile from '../make-profile.js';
 const questTitle = document.getElementById('quest-title');
 const questDescription = document.getElementById('quest-description');
 const choicesParent = document.getElementById('choices-parent');
+const questForm = document.getElementById('quest-form');
 
+// Grabs the current quest by ID from searchParams
 const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
 const quest = api.getQuestById(questId);
@@ -20,3 +22,14 @@ for(let i = 0; i < quest.choices.length; i++) {
 }
 
 makeProfile();
+
+questForm.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const formData = new FormData(questForm);
+    const choice = formData.get('choice');
+
+    const selectedChoice = quest.choices[choice];
+    console.log(selectedChoice);
+
+});
