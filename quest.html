@@ -18,12 +18,16 @@
     </div>
     <main>
         <h1 id="quest-title">Some Quest!</h1>
-        <p id="quest-description" class="form-box"></p>
-        <form class="form-box" id="quest-form">
-            <fieldset id="choices-parent">
-            </fieldset>
-            <button>Submit</button>
-        </form>
+        <p id="quest-result" class="form-box hidden"></p>
+        <section id="quest-info">
+            <p id="quest-description" class="form-box"></p>
+            <form  id="quest-form">
+                <fieldset id="choices-parent" class="form-box">
+                </fieldset>
+                <button>Submit</button>
+            </form>
+        </section>
+        <a href="map.html"><button id="back-to-map" class="hidden">Back to Map</button></a>
     </main>
     <script type="module" src="src/quest/quest.js"></script>
 </body>
