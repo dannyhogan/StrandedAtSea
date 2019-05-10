@@ -36,7 +36,7 @@ test('method getQuestById returns a single quest when given an id', assert => {
     //arrange
     const expectedQuest = questData[0];
     //act
-    const result = getQuestById(expectedQuest.id);
+    const result = api.getQuestById(expectedQuest.id);
 
     //assert
     assert.deepEqual(result, expectedQuest);
