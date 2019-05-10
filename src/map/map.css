@@ -41,4 +41,12 @@ main {
 
 nav a img {
     width: 90px;
+    transition: .5s;
+}
+
+
+nav a img:hover {
+    transform: rotate(10deg);
+    transition: .5s;
+    
 }
