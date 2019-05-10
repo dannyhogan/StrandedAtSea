@@ -1,3 +1,4 @@
+import scoreQuest from '../src/quest/score-quest.js';
 const test = QUnit.test;
 
 QUnit.module('score quest tests for each stat');
@@ -53,7 +54,7 @@ test('determines hp based off choice', assert => {
     const result = scoreQuest(vessel, choice);
 
     //assert
-    assert.deepEqual(result, expected)
+    assert.deepEqual(result, expected);
 });
 
 test('determines confidence based off choice', assert => {
@@ -80,13 +81,5 @@ test('determines confidence based off choice', assert => {
     const result = scoreQuest(vessel, choice);
 
     //assert
-    assert.deepEqual(result, expected)
+    assert.deepEqual(result, expected);
 });
-
-function scoreQuest(vessel, choice) {
-    vessel.gas += choice.gas;
-    vessel.hp += choice.hp;
-    vessel.confidence += choice.confidence;
-
-    return vessel;
-}
