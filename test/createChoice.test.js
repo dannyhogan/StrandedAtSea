@@ -6,7 +6,7 @@ QUnit.module('creates each choice in quest form');
 
 test('creates choice input html for a single choice in quest', assert => {
     //arrange
-    const expected = `<label>The beach! I could use some relaxation.<input type="radio" class="choice" id="beach" value="beach"></label>`;
+    const expected = `<label>The beach! I could use some relaxation.<input type="radio" class="choice" name="choice" id="beach" value="beach"></label>`;
     const choice = questData[0].choices[0];
     //act
     const result = createChoice(choice);
