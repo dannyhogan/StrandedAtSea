@@ -7,10 +7,10 @@ function createChoice(choice) {
     input.name = 'choice';
     input.id = choice.id;
     input.value = choice.id;
-
+    
     label.textContent = choice.description;
     label.appendChild(input);
-
+    
     return label;
 }
 
