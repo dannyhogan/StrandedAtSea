@@ -1,4 +1,5 @@
 import questData from './quest-data.js';
+import findById from '../find-by-id.js';
 
 const api = {
     storage: localStorage,
@@ -13,6 +14,9 @@ const api = {
     },
     getQuests() {
         return questData;
+    },
+    getQuestById(id) {
+        return findById(questData, id);
     }
 };
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/src/styles.css">
     <title>Stranded at Sea - Quest!</title>
 </head>
-<body>
+<body id="body">
     <div id="profile">
         <p id="name"></p>
         <img id="vessel-logo" src="">
@@ -17,24 +17,17 @@
         <p id="confidence"></p>
     </div>
     <main>
-        <h1>Some Quest!</h1>
-        <img id="quest-image" src="./assets/background.png">
-        <form id="quest-form">
-            <fieldset>
-                <label>
-                    Option1
-                    <input type="radio">
-                </label>
-                <label>
-                    Option2
-                    <input type="radio">
-                </label>
-                <label>
-                    Option3
-                    <input type="radio">
-                </label>
-            </fieldset>
-        </form>
+        <h1 id="quest-title">Some Quest!</h1>
+        <p id="quest-result" class="form-box hidden"></p>
+        <section id="quest-info">
+            <p id="quest-description" class="form-box"></p>
+            <form  id="quest-form">
+                <fieldset id="choices-parent" class="form-box">
+                </fieldset>
+                <button>Submit</button>
+            </form>
+        </section>
+        <a href="map.html"><button id="back-to-map" class="hidden">Back to Map</button></a>
     </main>
     <script type="module" src="src/quest/quest.js"></script>
 </body>
