@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./src/home/styles.css">
+    <link rel="stylesheet" href="./src/home/index.css">
     <title>Stranded At Sea!</title>
 </head>
 <body>
@@ -13,33 +13,31 @@
         <h2>He needs your help!</h3>
     </header>
     <main>
-        <form>
+        <form id="vessel-form">
             <fieldset class="form-box">
-                <legend>Pick Your Hero</legend>
+                <legend>Pick Your Vessel</legend>
                 <p>
                     <label>
-                        <input type="radio" name="hero" value="coast-guard">
-                        Coast Guard
-                        <img src="./assets/coast-guard.svg">
+                        <input class="radio" id="radio1" type="radio" value="coast-guard" name="type">
+                        <label class="label" for="radio1">Coast Guard<img src="./assets/coast-guard.svg"> </label>
                     </label>
                     <label>
-                        <input type="radio" name="hero" value="pirate">
-                        Pirate
-                        <img src="./assets/pirate.svg">
+                        <input class="radio" id="radio2" type="radio" value="pirate-ship" name="type">
+                        <label class="label" for="radio2">Pirate Ship<img src="./assets/pirate-ship.svg"> </label>
                     </label>
                     <label>
-                        <input type="radio" name="hero" value="fisherman">
-                        Fisherman
-                        <img src="./assets/fisherman.svg">
+                        <input class="radio" id="radio3" type="radio" value="fishing-boat" name="type">
+                        <label class="label" for="radio3">Fishing Boat<img src="./assets/fishing-boat.svg"> </label>
                     </label>
                 </p>
             </fieldset>
             <div class="form-box">
-                <h3>What's your sailor name?</h3>
+                <h3>Name your ship!</h3>
                 <input id="name" name="name">
             </div>
             <button>Save Lance!</button>
         </form>
     </main>
+    <script type="module" src="src/home/index.js"></script>
 </body>
 </html>

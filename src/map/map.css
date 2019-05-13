@@ -1,0 +1,44 @@
+html {
+    background-image: URL('/assets/background.png') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #3e64fc;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+#profile {
+    margin-right: 75px;
+}
+
+#quests {
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    background-image: URL('/assets/map.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.quest {
+    margin-top: 100px;
+    position: relative;
+}
+
+nav a img {
+    width: 90px;
+}

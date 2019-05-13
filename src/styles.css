@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One');
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Pirata One';
+}
+
+h1 {
+    font-size: 45px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.637);
+    margin-top: -30px;
+}
+
+h3 {
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+#profile {
+    background-color: #3e64fc49;
+    height: 250px;
+    width: 150px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px black;
+}
+
+#vessel-logo {
+    width: 35px;
+}
