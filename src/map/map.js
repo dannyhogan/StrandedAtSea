@@ -13,7 +13,14 @@ const questLinks = document.getElementById('quests');
 
 for(let i = 0; i < quests.length; i++) {
     const quest = quests[i];
-    const questLink = createQuestLink(quest);
-    questLinks.append(questLink);
+    
+    let dom = createQuestLink(quest)
+    if(vessel.completed[quest.id]) {
+        dom.style.pointerEvents = 'none';
+        dom.style.opacity = '.5';
+    }
+    questLinks.append(dom);
+
 }
+
 makeProfile();
