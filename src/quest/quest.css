@@ -45,6 +45,7 @@ input {
     padding: 10px;
     transition: .5s;
     background-color: #3e64fc4b;  
+    color: white;
 }
 
 .form-box:hover {
