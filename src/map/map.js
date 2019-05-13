@@ -4,6 +4,9 @@ import createQuestLink from './create-quest-links.js';
 // import createCompletedQuest from './create-completed-quest.js';
 
 const quests = api.getQuests();
+const vessel = api.getVessel();
+const boatImage = document.getElementById('boat');
+boatImage.src = '/assets/boats/' + vessel.type + '.png';
 
 //Parent element for quest links
 const questLinks = document.getElementById('quests');
