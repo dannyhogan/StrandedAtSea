@@ -1,5 +1,10 @@
 import hasCompletedAllQuests from '../src/map/has-completed-all-quests.js';
+import api from '../src/services/api.js';
+
 const test = QUnit.test;
+
+const quests = api.getQuests();
+
 
 test('returns true if the user has completed all tests', assert => {
     //arrange
@@ -9,9 +14,7 @@ test('returns true if the user has completed all tests', assert => {
             'lighthouse': true,
             'sharks': true
         }
-    }
-
-    const quests = ['island', 'lighthouse', 'sharks'];
+    };
 
     const expected = true;
     //act
@@ -29,9 +32,7 @@ test('returns false if the user has not completed all tests', assert => {
             'lighthouse': true,
         }
     };
-
-    const quests = ['island', 'lighthouse', 'sharks'];
-
+    
     const expected = false;
     //act
     const result = hasCompletedAllQuests(vessel, quests);
