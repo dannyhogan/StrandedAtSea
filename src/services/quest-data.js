@@ -33,21 +33,21 @@ const island = {
 
 const sharks = {
     id: 'sharks',
-    title: 'Search a school of sharks!',
+    title: 'Watch out! Sharks!',
     map: {
         top: '28%',
         right: '3%'
     },
-    description: `While searching for Lance, you come across a school of tiger sharks. They seem to be swimming in circles around something, but you can't quite make out what it is. What do you do?`,
+    description: `You come across a school of tiger sharks. They seem to be swimming in circles around something, but you can't quite make out what it is. What do you do?`,
     choices: [{
-        id: 'search',
+        id: 'swim',
         description: `Jump in and search the school of sharks for Lance. He's worth it!`,
-        result: 'You throw on your snorkel and hop in the water. You find something terrifying. It appears to be a human leg, and an oar for a small boat. The sharks must be full because they decide to leave you alone. Your ship loses 50 confidence and 15 gas.',
+        result: 'You throw on your snorkel and mask and hop in the water. You find something terrifying. Floating cucumbers, and an oar for a small boat. The sharks must be full - because they decide to leave you alone. You lose 50 confidence and 15 gas.',
         hp: 0,
         gas: -15,
         confidence: -50
     }, {
-        id: 'ignore',
+        id: 'run',
         description: `Ignore the sharks. Finding Lance isn't worth swimming with tiger sharks.`,
         result: `Watch out! As you are leaving the area the sharks' attention shift toward you, and they start attacking your boat! You speed away from the sharks, but your vessel loses 50 HP and 20 gas.`,
         hp: -50,
@@ -66,29 +66,29 @@ const sharks = {
 
 const lighthouse = {
     id: 'lighthouse',
-    title: 'Search a lighthouse island in the distance!',
+    title: 'Lighthouse Island!',
     map: {
         top: '20%'
     },
-    description: `More importantly, human civilization!`,
+    description: `You arrive at a small island that seems to have human civilization. You set anchor, and are ready to begin your search. Where do you begin?`,
     choices: [{
-        id: 'lighthouse',
-        description: `Search the lighthouse island for Lance!`,
-        result: 'You set anchor on the beach, and start hiking towards the lighthouse. ',
+        id: 'beach',
+        description: 'The beach! I could use some relaxation.',
+        result: 'After searching for a few minutes, you are approached by a local islander. You let him know about your long lost friend. The man tells you that he saw a man leave the island a few days prior in a raft full of cucumbers. You lose 10 gas, but gain 50 confidence, Lance must be near by!',
         hp: 0,
         gas: -10,
-        confidence: 80
+        confidence: 50
     }, {
-        id: '',
-        description: ``,
+        id: 'lighthouse',
+        description: `Climb to the top of the lighthouse!`,
         result: ``,
         hp: 0,
         gas: 0,
         confidence: 20
     }
     , {
-        id: 'flare',
-        description: `Shoot off a flare gun! Lance might notice the flare and create a smoke signal on the island!`,
+        id: 'cave',
+        description: `A spooky cave! `,
         result: `Unfortunately the flare gun you bought missfired. You decide to keep searching other areas andlose 50 confidence.`,
         hp: 0,
         gas: 0,
