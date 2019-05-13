@@ -1,5 +1,5 @@
 import questData from '../src/services/quest-data.js';
-import createChoice from '../src/quest/createChoice.js';
+import createChoice from '../src/quest/create-choice.js';
 const test = QUnit.test;
 
 QUnit.module('creates each choice in quest form');
