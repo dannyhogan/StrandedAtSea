@@ -15,7 +15,8 @@ test('creates a new vessel object based off formdata', assert => {
         name: 'SS Save Lance',
         hp: 100,
         gas: 100,
-        confidence: 100
+        confidence: 100,
+        completed: {}
     };
     //act
     const result = makeVessel(formData);

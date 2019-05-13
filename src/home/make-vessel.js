@@ -4,7 +4,8 @@ function makeVessel(formData) {
         name: formData.get('name'),
         hp: 100,
         gas: 100,
-        confidence: 100
+        confidence: 100,
+        completed: {}
     };
     
     return vessel;
