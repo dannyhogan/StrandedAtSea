@@ -1,5 +1,5 @@
 html {
-    background-image: URL('/assets/background.png') !important;
+    background-image: URL('/assets/map/background.png') !important;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #3e64fc;
@@ -28,7 +28,7 @@ main {
     margin: auto;
     height: 600px;
     width: 600px;
-    background-image: URL('/assets/map.png');
+    background-image: URL('/assets/map/map.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
@@ -55,5 +55,10 @@ nav a img {
 nav a img:hover {
     transform: rotate(10deg);
     transition: .5s;
-    
+}
+
+#boat {
+    width: 25%;
+    margin-top: 175px;
+    margin-left: 20px;
 }
