@@ -1,5 +1,5 @@
 import api from '../services/api.js';
-import createChoice from './createChoice.js';
+import createChoice from './create-choice.js';
 import makeProfile from '../make-profile.js';
 import findById from '../find-by-id.js';
 import scoreQuest from './score-quest.js';
@@ -40,7 +40,7 @@ questForm.addEventListener('submit', event => {
 
     // Gets vessel object, scores the choice, and saves the scored vessel object back to API
     const vessel = api.getVessel();
-    const score = scoreQuest(vessel, selectedChoice);
+    const score = scoreQuest(vessel, selectedChoice, quest);
     api.saveVessel(score);
 
     // Populates updated vessel profile
@@ -52,6 +52,10 @@ questForm.addEventListener('submit', event => {
     //Sets result textContent based off choice, and unhides element
     questResult.textContent = selectedChoice.result;
     questResult.classList.remove('hidden');
+    
+    document.body.style.background = 'URL(/assets/quests/' + quest.id + '/' + selectedChoice.id + '.png)';
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.transition = '2s';
 
     //Unhides back to map button
     backToMap.classList.remove('hidden');
