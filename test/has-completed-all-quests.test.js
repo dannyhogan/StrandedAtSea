@@ -1,3 +1,4 @@
+import hasCompletedAllQuests from '../src/map/has-completed-all-quests.js';
 const test = QUnit.test;
 
 test('returns true if the user has completed all tests', assert => {
@@ -38,14 +39,3 @@ test('returns false if the user has not completed all tests', assert => {
     //assert
     assert.equal(result, expected);
 });
-
-
-function hasCompletedAllQuests(vessel, quests) {
-    for(let i = 0; i < quests.length; i++) {
-        let quest = quests[i];
-        if(!vessel.completed[quest]) {
-            return false;
-        }
-    }
-    return true;
-}

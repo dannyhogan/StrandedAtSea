@@ -1,3 +1,4 @@
+import isDead from '../src/map/is-dead.js';
 const test = QUnit.test;
 
 QUnit.module('isDead function');
@@ -29,10 +30,3 @@ test('returns false if hp is above 0', assert => {
     assert.equal(result, expected);
 });
 
-function isDead(vessel) {
-    if(vessel.hp <= 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
