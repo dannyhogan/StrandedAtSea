@@ -14,7 +14,7 @@ const questLinks = document.getElementById('quests');
 for(let i = 0; i < quests.length; i++) {
     const quest = quests[i];
     
-    let dom = createQuestLink(quest)
+    let dom = createQuestLink(quest);
     if(vessel.completed[quest.id]) {
         dom.style.pointerEvents = 'none';
         dom.style.opacity = '.5';
