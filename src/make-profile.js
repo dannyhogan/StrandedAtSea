@@ -10,7 +10,7 @@ function makeProfile() {
     const vessel = api.getVessel();
 
     name.textContent = '"' + vessel.name + '"';
-    vesselLogo.src = '/assets/' + vessel.type + '.svg';
+    vesselLogo.src = '/assets/boaticons/' + vessel.type + '.svg';
     hp.textContent = 'HP: ' + vessel.hp;
     gas.textContent = 'GAS: ' + vessel.gas;
     confidence.textContent = 'CONFIDENCE: ' + vessel.confidence;

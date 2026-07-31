@@ -10,7 +10,7 @@ function createQuestLink(quest) {
     link.style.top = quest.map.top;
     link.style.right = quest.map.right;
 
-    img.src = './assets/' + quest.id + '.png';
+    img.src = './assets/map/' + quest.id + '.png';
     link.append(img);
 
     return link;
